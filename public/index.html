@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marks BookMarks</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>MARKS BOOKMARKS!!!!</h1>
+    <form onsubmit="app.controllers.bookmarkController.addBook(event)">
+      <input type="text" name="title" placeholder="Title">
+      <button type="submit">Add Book</button>
+    </form>
+    <div id="book-list">
+
+    </div>
+  </div>
+
+
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- services -->
+  <script src = "bookmark-service.js"></script>
+  <!-- controllers -->
+  <script src = "bookmark-controller.js"></script>
+  <!-- Init  -->
+  <script src = "app.js"></script>
+</body>
+
+</html>
